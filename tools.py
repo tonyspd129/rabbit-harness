@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-Tool schemas and executor for the custom ReAct harness.
+Tool schemas and executor for the Rabbit harness.
 
-Tool set mirrors the PI coding-agent (packages/coding-agent/src/core/tools/)
-while keeping hermes-compatible names for the core file/shell tools.
+Tool set mirrors the PI coding-agent (packages/coding-agent/src/core/tools/).
 
 Tools:
   terminal      - run shell commands (bash)

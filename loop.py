@@ -2,11 +2,9 @@
 """
 ReAct loop — synchronous, no asyncio required.
 
-Recovery behaviour (vs hermes v0.8.0):
-  - prefill_retries counter is reset to 0 on EVERY successful tool-call turn
-    (hermes never reset it, so 2 thinking-only turns anywhere in the session
-    would terminate it)
-  - MAX_PREFILL=5 (vs 2 in hermes v0.8.0)
+Recovery behaviour:
+  - prefill_retries counter resets to 0 on EVERY successful tool-call turn
+  - MAX_PREFILL=5 thinking-only retries per streak
   - Empty-content nudge: up to 3 retries with an explicit continuation prompt
 """
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Custom agent harness entry point.
+Rabbit Harness entry point.
 
 Usage (inside the sandbox container):
-    python3 /opt/custom-harness/main.py \\
+    python3 /opt/rabbit-harness/main.py \\
         --prompt "Read SKILL.md and complete the task." \\
         --model  "qwen/qwen3.5-35b-a3b" \\
         [--provider     AlibabaCloud] \\
@@ -22,7 +22,7 @@ import os
 import sys
 from pathlib import Path
 
-# Allow `import loop` etc. when invoked as `python3 /opt/custom-harness/main.py`
+# Allow `import loop` etc. when invoked as `python3 /opt/rabbit-harness/main.py`
 sys.path.insert(0, str(Path(__file__).parent.resolve()))
 
 from loop import run  # noqa: E402 — must come after sys.path patch

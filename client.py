@@ -236,7 +236,7 @@ class OpenRouterClient:
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
                 "HTTP-Referer": "https://github.com/trajectoryRL/trajrl-bench",
-                "X-Title": "custom-harness",
+                "X-Title": "rabbit-harness",
             },
             method="POST",
         )
